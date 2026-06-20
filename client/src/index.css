@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[#111827] bg-[#FFFFFF] font-sans antialiased;
+  }
+}
+
+/* Glassmorphism custom classes */
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.glass-panel-gold {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.glass-input {
+  background: #FFFFFF;
+  border: 1px solid rgba(179, 49, 241, 0.15);
+  color: #111827;
+  transition: all 0.3s ease;
+}
+
+.glass-input:focus {
+  border-color: #B331F1;
+  box-shadow: 0 0 10px rgba(179, 49, 241, 0.15);
+  outline: none;
+}
+
+/* Golden text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #B331F1 0%, #FF62BB 50%, #FF97D0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-accent {
+  background: linear-gradient(135deg, #B331F1 0%, #FF62BB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(3, 7, 18, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.4);
+}
